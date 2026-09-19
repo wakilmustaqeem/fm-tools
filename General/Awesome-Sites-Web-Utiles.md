@@ -1,12 +1,12 @@
-# Awesome Useful Websites
+# Awesome Sites Web Utiles
 
-- Verified source: atakanaltok/awesome-useful-websites
-- Description: hand-curated list of useful websites across many categories.
-- License: see the repository LICENSE.
-- Offline: No — it is primarily a web-resource directory.
+- Official repository: abdessamadbettal/awesome-sites-web-utiles
+- Description: French-language curated collection of useful websites, free tools, AI applications, developer resources, design tools, SEO, productivity and online services.
+- License: MIT.
+- Offline: No — this is a web-resource directory.
 - AI required: No.
 - Internet required: Yes.
-- API key: Not required to browse the list.
-- FM use: discovery/reference catalog rather than a locally installed tool.
-- Note: this is recorded as the closest verified match to the original "Awesome Sites Web Utiles" name; the exact original name was not independently confirmed.
+- API key: Not required to browse the catalog.
+- FM use: discovery/reference catalog, not an installed runtime tool.
+- Source status: **Exact name/source verified**.
 - Source verified: current GitHub repository.
