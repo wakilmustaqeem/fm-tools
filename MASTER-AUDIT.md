@@ -5,34 +5,41 @@
 - Exact/official source verified: **31 / 31**
 - Exact-source verification coverage: **100%**
 - Catalog records represented in the repository: **31 / 31**
+- Operational tool records standardized: **31 / 31**
 - Closest-match records: **0**
 - Unresolved exact repositories: **0**
 
 ## Category audit
 
-| Category | Original | Verified | Unresolved |
+| Category | Original | Verified | Operational |
 |---|---:|---:|---:|
-| SEO | 4 | 4 | 0 |
-| AI | 3 | 3 | 0 |
-| Design | 3 | 3 | 0 |
-| Writing | 3 | 3 | 0 |
-| Developer | 3 | 3 | 0 |
-| Productivity | 3 | 3 | 0 |
-| Marketing | 3 | 3 | 0 |
-| Video | 3 | 3 | 0 |
-| Audio | 3 | 3 | 0 |
-| General / Awesome Lists | 3 | 3 | 0 |
-| **TOTAL** | **31** | **31** | **0** |
+| SEO | 4 | 4 | 4 |
+| AI | 3 | 3 | 3 |
+| Design | 3 | 3 | 3 |
+| Writing | 3 | 3 | 3 |
+| Developer | 3 | 3 | 3 |
+| Productivity | 3 | 3 | 3 |
+| Marketing | 3 | 3 | 3 |
+| Video | 3 | 3 | 3 |
+| Audio | 3 | 3 | 3 |
+| General / Awesome Lists | 3 | 3 | 3 |
+| **TOTAL** | **31** | **31** | **31** |
 
-## Final verification closure
-**WaveShed is now verified.** The FOSS United project page's Repository link resolves to the canonical GitHub repository **aarav-fred-mehta/Wave-Shed**. GitHub identifies it as a free, open-source, privacy-focused podcast recording/editing tool and shows an MIT license. citeturn1view0turn2view0
-
-## Important classification correction
-**HyCanvas** is source-verified but uses Elastic License 2.0. It should be described as **source-available / Elastic-licensed**, not OSI-approved open source.
+## Final consistency pass
+- All 31 tool-specific records are present.
+- All 10 category indexes are present.
+- The master index lists all 31 original tools and their exact repositories.
+- Offline/non-AI matrix contains all 31 entries.
+- Documentation distinguishes catalog/reference resources from installable software.
+- HyCanvas is explicitly **source-available / Elastic-licensed**, not standard OSI open source.
+- Offline, AI, internet/API and local/self-hosted requirements are kept as separate fields.
+- No destructive installation or automatic production changes were performed.
 
 ## Policy
 - Verify the official/original source before treating a tool as active.
 - Record offline, AI, internet, API-key and local/self-hosted requirements separately.
 - This repository is a catalog, not an automatic installer.
-- No destructive installation or project changes are performed by cataloging.
 - Uncertain names remain visible as unresolved rather than being silently substituted.
+
+## Final status
+**31/31 verified + 31/31 operationally documented = 100% complete.**
