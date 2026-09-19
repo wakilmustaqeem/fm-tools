@@ -1,0 +1,40 @@
+name: Validate FM Tools Bank
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '.github/workflows/validate-toolbank.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Validate catalog counts
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find . -mindepth 2 -maxdepth 2 -type f -name '*.md' | grep -v '/README.md$' | grep -v '/tools.md$' | wc -l)" -eq 31
+          grep -q "31 / 31" README.md
+          grep -q "100% verification coverage" README.md
+          grep -q "31/31" TOOL-INDEX.md
+          grep -q "31/31" MASTER-AUDIT.md
+          grep -q "31/31" AUDIT-STATUS.md
+          echo "FM Tools Bank validation passed."
+
+      - name: Validate category indexes
+        shell: bash
+        run: |
+          set -euo pipefail
+          for f in SEO/tools.md AI/tools.md Design/tools.md Writing/tools.md Developer/tools.md Productivity/tools.md Marketing/tools.md Video/tools.md Audio/tools.md General/tools.md; do
+            test -f "$f"
+          done
+          echo "All 10 category indexes present."
