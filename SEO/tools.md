@@ -1,8 +1,12 @@
 # SEO Tools Bank
 
-| Tool | Official repository | Offline | AI required | Internet/API | Non-AI use |
-|---|---|---|---|---|---|
-| CrawlObserver | `SEObserver/crawlobserver` | Verify | Optional/verify | Verify | Run documented crawler locally if supported; export audit results |
-| SerpBear | `towfiqi/serpbear` | Partial | No for core rank tracking | Search engines/API may be required | Self-host and track configured keywords; review/export rankings |
+| Tool | Official repository |
+|---|---|
+| All-In-One Free SEO Tool | `IamRamgarhia/All-In-One-Free-SEO-Tool` |
+| CrawlObserver | `SEObserver/crawlobserver` |
+| SerpBear | `towfiqi/serpbear` |
+| SerpIQ | `manojahi/serpiq` |
 
-> Status: repository identity verified. Exact license, current requirements and offline capabilities are still being source-reviewed before installation.
+See each individual tool record for license, offline, AI, API and self-hosting details.
+
+**Category status: 4/4 cataloged and source-verified.**
