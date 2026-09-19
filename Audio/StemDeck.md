@@ -2,10 +2,12 @@
 
 - Official repository: stemdeckapp/stemdeck
 - License: Apache-2.0
-- Offline: Yes — local processing.
-- AI required: No cloud AI; stem separation uses local Demucs models.
-- Internet/API: Internet may be needed for initial downloads; local files can then be processed locally.
-- API key: Not required.
-- Local/self-hosted: Yes; Windows, macOS, Linux and Docker builds are provided.
-- Basic non-cloud workflow: import an audio/video file, run local stem separation, review vocals/drums/bass/guitar/piano/other, then export stems or a mix.
-- Note: YouTube import is a convenience feature and may involve downloading; use only for content you have rights to process.
+- Offline: Yes after initial runtime/model setup.
+- AI required: No cloud AI; stem separation uses local Demucs neural models.
+- Internet/API: Initial app/model downloads need internet; local audio processing does not require cloud access. YouTube import requires network.
+- API key: Not required for local processing.
+- Local/self-hosted: Yes; prebuilt Windows/macOS/Linux packages and Docker are documented.
+- Basic non-cloud workflow: import an owned audio/video file, run local six-stem separation, review vocals/drums/bass/guitar/piano/other, then export individual stems or a mix.
+- Runtime prerequisites: current releases bundle the Python runtime and download FFmpeg/Demucs on first launch; NVIDIA builds use CUDA, while Apple Silicon can use MPS. Manual source setup uses Python/uv and FFmpeg.
+- Limitation: project is still alpha; some platform-specific issues remain, including reported Linux playback/waveform problems. YouTube support should only be used for content the user has rights to process.
+- Source verified: official GitHub repository/documentation.
