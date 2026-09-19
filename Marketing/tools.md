@@ -1,7 +1,9 @@
 # Marketing Tools Bank
 
-| Tool | Official repository | Offline | AI required | Internet/API | Non-AI use |
-|---|---|---|---|---|---|
-| Mautic | `mautic/mautic` | Self-hosted | No for core platform | Email delivery/integrations require network | Self-host campaign management, contacts, segments and reporting; external delivery/integrations need connectivity |
+| Tool | Official repository |
+|---|---|
+| Outlier | `daemnapps/outlier` |
+| Helio | `achref-soua/helio` |
+| Mautic | `mautic/mautic` |
 
-> Status: repository identity verified. Exact license and current deployment requirements are still being source-reviewed.
+**Category status: 3/3 cataloged and source-verified.**
