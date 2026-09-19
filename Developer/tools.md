@@ -1,7 +1,9 @@
 # Developer Tools Bank
 
-| Tool | Official repository | Offline | AI required | Internet/API | Non-AI use |
-|---|---|---|---|---|---|
-| OpenCode | `anomalyco/opencode` | Local app, verify feature dependencies | Yes for AI-agent features | Provider/API may be required | Use the local terminal/editor workflow for ordinary development; AI-agent features require a configured provider |
+| Tool | Official repository |
+|---|---|
+| ToolPipe | `Ithiel-Labs/toolpipe` |
+| DevUtils | `nadimtuhin/devutils` |
+| OpenCode | `anomalyco/opencode` |
 
-> Status: repository identity verified. Exact license and current provider/offline requirements are still being source-reviewed.
+**Category status: 3/3 cataloged and source-verified.**
