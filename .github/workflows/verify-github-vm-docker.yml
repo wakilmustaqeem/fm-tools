@@ -1,0 +1,23 @@
+name: Verify GitHub VM and Docker
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show runner
+        run: |
+          echo "Runner: $RUNNER_NAME"
+          echo "OS: $RUNNER_OS"
+          uname -a
+
+      - name: Verify Docker
+        run: |
+          docker --version
+          docker info --format '{{.ServerVersion}}'
+          docker run --rm hello-world
