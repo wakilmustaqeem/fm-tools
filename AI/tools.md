@@ -1,5 +1,11 @@
 # AI Tools
 
-Verified and reviewed AI tool catalogs and local/open-source AI projects.
+| Tool | Official repository |
+|---|---|
+| Awesome Free AI Tools | `mdruhulkuddus/awesome-free-ai-tools` |
+| Awesome Open Source AI Alternatives | `JeevaVenkidu/awesome-open-ai-alternatives` |
+| KISS Sorcar | `ksenxx/kiss_ai` |
 
-See individual tool records in this directory for license, offline, AI, API-key and self-hosting status.
+See individual records for local/offline and provider requirements.
+
+**Category status: 3/3 cataloged and source-verified.**
