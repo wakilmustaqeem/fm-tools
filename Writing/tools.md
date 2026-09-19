@@ -1,3 +1,9 @@
 # Writing Tools
 
-Verified writing and document tools. Each tool record separates ordinary non-AI writing from optional AI features.
+| Tool | Official repository |
+|---|---|
+| ScribeDog | `snooky234/scribedog` |
+| OpenWrite | `ilrein/openwrite` |
+| Murmur | `murmur-io/murmur` |
+
+**Category status: 3/3 cataloged and source-verified.**
