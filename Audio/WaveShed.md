@@ -1,15 +1,13 @@
 # WaveShed
 
-## Verification status
-**Unverified — do not install or rely on it yet.**
-
-The tool name/description from the original FM tool list could not be matched confidently to an authoritative official repository during the current verification pass.
-
-- Offline: Unknown
-- AI required: Unknown
-- Internet/API: Unknown
-- API key: Unknown
-- Local/self-hosted: Unknown
-
-### Policy
-Keep this entry unverified until an authoritative repository or official documentation is confirmed. Do not substitute a similarly named project.
+- Project: Wave Shed
+- Source evidence: FOSS United project page for Wave Shed.
+- Exact GitHub repository: not independently confirmed from the available source record.
+- Status: **Unverified repository / source-level verified concept**.
+- Type: privacy-first peer-to-peer podcast recording studio intended to run in the browser.
+- Offline: Partial — local lossless recording and browser-side processing are described, but live peer-to-peer rooms need connectivity.
+- AI required: No for basic recording/editing; on-device transcription and noise suppression use open-source AI models and are optional features.
+- Internet required: Yes for remote/live-room features.
+- Self-hosting: The project describes a self-host-ready signaling server.
+- FM note: keep this entry as unverified until the canonical GitHub repository is confirmed. Do not substitute another podcast tool.
+- Source evidence checked: FOSS United project listing.
