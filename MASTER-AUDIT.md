@@ -24,8 +24,10 @@
 | General / Awesome Lists | 3 | 3 | 0 |
 | **TOTAL** | **31** | **30** | **1** |
 
-## Remaining verification gap
-**WaveShed** remains source-level verified as a project concept, but its exact official GitHub repository has not been independently confirmed. It stays **Unverified** rather than being replaced.
+## WaveShed verification
+Wave Shed's project concept/source is verified through FOSS United, which describes the browser-based privacy-first podcast recorder. The exact canonical GitHub repository is still not independently confirmed. citeturn0search0
+
+Search also surfaced a separate, unrelated **Waveshed** RF-propagation product. It is explicitly not being substituted for Wave Shed. citeturn0search1turn0search11
 
 ## Important classification correction
 **HyCanvas** is source-verified but uses Elastic License 2.0. It should be described as **source-available / Elastic-licensed**, not OSI-approved open source.
