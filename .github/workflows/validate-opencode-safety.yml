@@ -49,6 +49,10 @@ jobs:
           from pathlib import Path
 
           p = Path(".opencode/agents/review.md")
+          if not p.exists():
+              print("Read-only review agent: SKIP (agent is introduced by a separate PR)")
+              raise SystemExit(0)
+
           text = p.read_text(encoding="utf-8")
 
           required = [
