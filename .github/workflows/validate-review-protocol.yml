@@ -1,0 +1,56 @@
+name: Validate FM Review Protocol
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/CODERABBIT-OPENCODE-PROTOCOL.md'
+      - '.github/workflows/validate-review-protocol.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/CODERABBIT-OPENCODE-PROTOCOL.md'
+      - '.github/workflows/validate-review-protocol.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-review-protocol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate protocol controls
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path(".github/CODERABBIT-OPENCODE-PROTOCOL.md")
+          if not p.exists():
+              raise SystemExit("Protocol file is missing")
+
+          text = p.read_text(encoding="utf-8")
+
+          required = [
+              "CodeRabbit for independent PR review",
+              "OpenCode for controlled analysis/fixes",
+              "PR opened — CodeRabbit",
+              "PR opened — OpenCode read-only review",
+              "After fixes / new commit — CodeRabbit",
+              "Before merge — OpenCode verification",
+              "Human approval",
+              "If CodeRabbit is rate-limited, do not spam manual review triggers.",
+              "Current PR head SHA verified.",
+              "CI checks successful.",
+              "No unresolved critical safety issue.",
+          ]
+
+          missing = [item for item in required if item not in text]
+          if missing:
+              raise SystemExit("Missing protocol controls: " + ", ".join(missing))
+
+          print("FM Review Protocol: PASS")
+          PY
